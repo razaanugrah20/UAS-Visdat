@@ -1,0 +1,1588 @@
+window.HIERARCHY_DATA = window.HIERARCHY_JATENG =  {
+  "name": "Provinsi Jawa Tengah",
+  "level": "Provinsi",
+  "children": [
+    {
+      "name": "Karesidenan Banyumas",
+      "karesidenan": "Banyumas",
+      "level": "Karesidenan",
+      "children": [
+        {
+          "id": "3301",
+          "name": "Cilacap",
+          "type": "Kabupaten",
+          "karesidenan": "Banyumas",
+          "level": "Kabupaten/Kota",
+          "umk": 2640248.0,
+          "tpt": 7.4,
+          "pdrb_kapita": 69736.0,
+          "pengeluaran": 1198865.0,
+          "cluster": "Sentra Industri Spesifik / Energi",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Cilacap",
+              "karesidenan": "Banyumas",
+              "value": 244069,
+              "umk": 2640248.0,
+              "pengeluaran": 1198865.0,
+              "tpt": 7.4
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Cilacap",
+              "karesidenan": "Banyumas",
+              "value": 280045,
+              "umk": 2640248.0,
+              "pengeluaran": 1198865.0,
+              "tpt": 7.4
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Cilacap",
+              "karesidenan": "Banyumas",
+              "value": 467843,
+              "umk": 2640248.0,
+              "pengeluaran": 1198865.0,
+              "tpt": 7.4
+            }
+          ]
+        },
+        {
+          "id": "3302",
+          "name": "Banyumas",
+          "type": "Kabupaten",
+          "karesidenan": "Banyumas",
+          "level": "Kabupaten/Kota",
+          "umk": 2338410.0,
+          "tpt": 6.26,
+          "pdrb_kapita": 42784.0,
+          "pengeluaran": 1417648.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Banyumas",
+              "karesidenan": "Banyumas",
+              "value": 279443,
+              "umk": 2338410.0,
+              "pengeluaran": 1417648.0,
+              "tpt": 6.26
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Banyumas",
+              "karesidenan": "Banyumas",
+              "value": 169605,
+              "umk": 2338410.0,
+              "pengeluaran": 1417648.0,
+              "tpt": 6.26
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Banyumas",
+              "karesidenan": "Banyumas",
+              "value": 510947,
+              "umk": 2338410.0,
+              "pengeluaran": 1417648.0,
+              "tpt": 6.26
+            }
+          ]
+        },
+        {
+          "id": "3303",
+          "name": "Purbalingga",
+          "type": "Kabupaten",
+          "karesidenan": "Banyumas",
+          "level": "Kabupaten/Kota",
+          "umk": 2338283.0,
+          "tpt": 4.83,
+          "pdrb_kapita": 34427.0,
+          "pengeluaran": 1270469.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Purbalingga",
+              "karesidenan": "Banyumas",
+              "value": 235430,
+              "umk": 2338283.0,
+              "pengeluaran": 1270469.0,
+              "tpt": 4.83
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Purbalingga",
+              "karesidenan": "Banyumas",
+              "value": 131254,
+              "umk": 2338283.0,
+              "pengeluaran": 1270469.0,
+              "tpt": 4.83
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Purbalingga",
+              "karesidenan": "Banyumas",
+              "value": 216553,
+              "umk": 2338283.0,
+              "pengeluaran": 1270469.0,
+              "tpt": 4.83
+            }
+          ]
+        },
+        {
+          "id": "3304",
+          "name": "Banjarnegara",
+          "type": "Kabupaten",
+          "karesidenan": "Banyumas",
+          "level": "Kabupaten/Kota",
+          "umk": 2170475.0,
+          "tpt": 5.39,
+          "pdrb_kapita": 29366.0,
+          "pengeluaran": 1166949.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Banjarnegara",
+              "karesidenan": "Banyumas",
+              "value": 150495,
+              "umk": 2170475.0,
+              "pengeluaran": 1166949.0,
+              "tpt": 5.39
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Banjarnegara",
+              "karesidenan": "Banyumas",
+              "value": 197462,
+              "umk": 2170475.0,
+              "pengeluaran": 1166949.0,
+              "tpt": 5.39
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Banjarnegara",
+              "karesidenan": "Banyumas",
+              "value": 234736,
+              "umk": 2170475.0,
+              "pengeluaran": 1166949.0,
+              "tpt": 5.39
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Karesidenan Kedu",
+      "karesidenan": "Kedu",
+      "level": "Karesidenan",
+      "children": [
+        {
+          "id": "3305",
+          "name": "Kebumen",
+          "type": "Kabupaten",
+          "karesidenan": "Kedu",
+          "level": "Kabupaten/Kota",
+          "umk": 2259874.0,
+          "tpt": 4.95,
+          "pdrb_kapita": 28999.0,
+          "pengeluaran": 1306234.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Kebumen",
+              "karesidenan": "Kedu",
+              "value": 241911,
+              "umk": 2259874.0,
+              "pengeluaran": 1306234.0,
+              "tpt": 4.95
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Kebumen",
+              "karesidenan": "Kedu",
+              "value": 257048,
+              "umk": 2259874.0,
+              "pengeluaran": 1306234.0,
+              "tpt": 4.95
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Kebumen",
+              "karesidenan": "Kedu",
+              "value": 312290,
+              "umk": 2259874.0,
+              "pengeluaran": 1306234.0,
+              "tpt": 4.95
+            }
+          ]
+        },
+        {
+          "id": "3306",
+          "name": "Purworejo",
+          "type": "Kabupaten",
+          "karesidenan": "Kedu",
+          "level": "Kabupaten/Kota",
+          "umk": 2265938.0,
+          "tpt": 3.72,
+          "pdrb_kapita": 33035.0,
+          "pengeluaran": 1275668.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Purworejo",
+              "karesidenan": "Kedu",
+              "value": 91198,
+              "umk": 2265938.0,
+              "pengeluaran": 1275668.0,
+              "tpt": 3.72
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Purworejo",
+              "karesidenan": "Kedu",
+              "value": 156833,
+              "umk": 2265938.0,
+              "pengeluaran": 1275668.0,
+              "tpt": 3.72
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Purworejo",
+              "karesidenan": "Kedu",
+              "value": 214539,
+              "umk": 2265938.0,
+              "pengeluaran": 1275668.0,
+              "tpt": 3.72
+            }
+          ]
+        },
+        {
+          "id": "3307",
+          "name": "Wonosobo",
+          "type": "Kabupaten",
+          "karesidenan": "Kedu",
+          "level": "Kabupaten/Kota",
+          "umk": 2299521.0,
+          "tpt": 3.99,
+          "pdrb_kapita": 28721.0,
+          "pengeluaran": 1334335.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Wonosobo",
+              "karesidenan": "Kedu",
+              "value": 114667,
+              "umk": 2299521.0,
+              "pengeluaran": 1334335.0,
+              "tpt": 3.99
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Wonosobo",
+              "karesidenan": "Kedu",
+              "value": 199049,
+              "umk": 2299521.0,
+              "pengeluaran": 1334335.0,
+              "tpt": 3.99
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Wonosobo",
+              "karesidenan": "Kedu",
+              "value": 213185,
+              "umk": 2299521.0,
+              "pengeluaran": 1334335.0,
+              "tpt": 3.99
+            }
+          ]
+        },
+        {
+          "id": "3308",
+          "name": "Magelang",
+          "type": "Kabupaten",
+          "karesidenan": "Kedu",
+          "level": "Kabupaten/Kota",
+          "umk": 2467488.0,
+          "tpt": 3.52,
+          "pdrb_kapita": 34751.0,
+          "pengeluaran": 1664853.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Magelang",
+              "karesidenan": "Kedu",
+              "value": 234137,
+              "umk": 2467488.0,
+              "pengeluaran": 1664853.0,
+              "tpt": 3.52
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Magelang",
+              "karesidenan": "Kedu",
+              "value": 249320,
+              "umk": 2467488.0,
+              "pengeluaran": 1664853.0,
+              "tpt": 3.52
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Magelang",
+              "karesidenan": "Kedu",
+              "value": 322684,
+              "umk": 2467488.0,
+              "pengeluaran": 1664853.0,
+              "tpt": 3.52
+            }
+          ]
+        },
+        {
+          "id": "3323",
+          "name": "Temanggung",
+          "type": "Kabupaten",
+          "karesidenan": "Kedu",
+          "level": "Kabupaten/Kota",
+          "umk": 2246850.0,
+          "tpt": 2.31,
+          "pdrb_kapita": 38002.0,
+          "pengeluaran": 1218982.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Temanggung",
+              "karesidenan": "Kedu",
+              "value": 73855,
+              "umk": 2246850.0,
+              "pengeluaran": 1218982.0,
+              "tpt": 2.31
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Temanggung",
+              "karesidenan": "Kedu",
+              "value": 257430,
+              "umk": 2246850.0,
+              "pengeluaran": 1218982.0,
+              "tpt": 2.31
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Temanggung",
+              "karesidenan": "Kedu",
+              "value": 162450,
+              "umk": 2246850.0,
+              "pengeluaran": 1218982.0,
+              "tpt": 2.31
+            }
+          ]
+        },
+        {
+          "id": "3371",
+          "name": "Kota Magelang",
+          "type": "Kota",
+          "karesidenan": "Kedu",
+          "level": "Kabupaten/Kota",
+          "umk": 2281230.0,
+          "tpt": 4.31,
+          "pdrb_kapita": 103577.0,
+          "pengeluaran": 1634244.0,
+          "cluster": "Kota Jasa & Perdagangan",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Kota Magelang",
+              "karesidenan": "Kedu",
+              "value": 13253,
+              "umk": 2281230.0,
+              "pengeluaran": 1634244.0,
+              "tpt": 4.31
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Kota Magelang",
+              "karesidenan": "Kedu",
+              "value": 766,
+              "umk": 2281230.0,
+              "pengeluaran": 1634244.0,
+              "tpt": 4.31
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Kota Magelang",
+              "karesidenan": "Kedu",
+              "value": 51107,
+              "umk": 2281230.0,
+              "pengeluaran": 1634244.0,
+              "tpt": 4.31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Karesidenan Surakarta",
+      "karesidenan": "Surakarta",
+      "level": "Karesidenan",
+      "children": [
+        {
+          "id": "3309",
+          "name": "Boyolali",
+          "type": "Kabupaten",
+          "karesidenan": "Surakarta",
+          "level": "Kabupaten/Kota",
+          "umk": 2396598.0,
+          "tpt": 2.97,
+          "pdrb_kapita": 44028.0,
+          "pengeluaran": 1446164.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Boyolali",
+              "karesidenan": "Surakarta",
+              "value": 203174,
+              "umk": 2396598.0,
+              "pengeluaran": 1446164.0,
+              "tpt": 2.97
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Boyolali",
+              "karesidenan": "Surakarta",
+              "value": 212615,
+              "umk": 2396598.0,
+              "pengeluaran": 1446164.0,
+              "tpt": 2.97
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Boyolali",
+              "karesidenan": "Surakarta",
+              "value": 235536,
+              "umk": 2396598.0,
+              "pengeluaran": 1446164.0,
+              "tpt": 2.97
+            }
+          ]
+        },
+        {
+          "id": "3310",
+          "name": "Klaten",
+          "type": "Kabupaten",
+          "karesidenan": "Surakarta",
+          "level": "Kabupaten/Kota",
+          "umk": 2389873.0,
+          "tpt": 3.88,
+          "pdrb_kapita": 44917.0,
+          "pengeluaran": 1360829.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Klaten",
+              "karesidenan": "Surakarta",
+              "value": 285482,
+              "umk": 2389873.0,
+              "pengeluaran": 1360829.0,
+              "tpt": 3.88
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Klaten",
+              "karesidenan": "Surakarta",
+              "value": 130564,
+              "umk": 2389873.0,
+              "pengeluaran": 1360829.0,
+              "tpt": 3.88
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Klaten",
+              "karesidenan": "Surakarta",
+              "value": 343224,
+              "umk": 2389873.0,
+              "pengeluaran": 1360829.0,
+              "tpt": 3.88
+            }
+          ]
+        },
+        {
+          "id": "3311",
+          "name": "Sukoharjo",
+          "type": "Kabupaten",
+          "karesidenan": "Surakarta",
+          "level": "Kabupaten/Kota",
+          "umk": 2359488.0,
+          "tpt": 4.32,
+          "pdrb_kapita": 56279.0,
+          "pengeluaran": 1496938.0,
+          "cluster": "Pusat Metropolis & Industri Matang",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Sukoharjo",
+              "karesidenan": "Surakarta",
+              "value": 185038,
+              "umk": 2359488.0,
+              "pengeluaran": 1496938.0,
+              "tpt": 4.32
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Sukoharjo",
+              "karesidenan": "Surakarta",
+              "value": 57572,
+              "umk": 2359488.0,
+              "pengeluaran": 1496938.0,
+              "tpt": 4.32
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Sukoharjo",
+              "karesidenan": "Surakarta",
+              "value": 264775,
+              "umk": 2359488.0,
+              "pengeluaran": 1496938.0,
+              "tpt": 4.32
+            }
+          ]
+        },
+        {
+          "id": "3312",
+          "name": "Wonogiri",
+          "type": "Kabupaten",
+          "karesidenan": "Surakarta",
+          "level": "Kabupaten/Kota",
+          "umk": 2180588.0,
+          "tpt": 2.16,
+          "pdrb_kapita": 40506.0,
+          "pengeluaran": 1360226.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Wonogiri",
+              "karesidenan": "Surakarta",
+              "value": 140190,
+              "umk": 2180588.0,
+              "pengeluaran": 1360226.0,
+              "tpt": 2.16
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Wonogiri",
+              "karesidenan": "Surakarta",
+              "value": 314218,
+              "umk": 2180588.0,
+              "pengeluaran": 1360226.0,
+              "tpt": 2.16
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Wonogiri",
+              "karesidenan": "Surakarta",
+              "value": 216124,
+              "umk": 2180588.0,
+              "pengeluaran": 1360226.0,
+              "tpt": 2.16
+            }
+          ]
+        },
+        {
+          "id": "3313",
+          "name": "Karanganyar",
+          "type": "Kabupaten",
+          "karesidenan": "Surakarta",
+          "level": "Kabupaten/Kota",
+          "umk": 2437110.0,
+          "tpt": 3.26,
+          "pdrb_kapita": 56882.0,
+          "pengeluaran": 1519189.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Karanganyar",
+              "karesidenan": "Surakarta",
+              "value": 166128,
+              "umk": 2437110.0,
+              "pengeluaran": 1519189.0,
+              "tpt": 3.26
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Karanganyar",
+              "karesidenan": "Surakarta",
+              "value": 138396,
+              "umk": 2437110.0,
+              "pengeluaran": 1519189.0,
+              "tpt": 3.26
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Karanganyar",
+              "karesidenan": "Surakarta",
+              "value": 250217,
+              "umk": 2437110.0,
+              "pengeluaran": 1519189.0,
+              "tpt": 3.26
+            }
+          ]
+        },
+        {
+          "id": "3314",
+          "name": "Sragen",
+          "type": "Kabupaten",
+          "karesidenan": "Surakarta",
+          "level": "Kabupaten/Kota",
+          "umk": 2182200.0,
+          "tpt": 3.49,
+          "pdrb_kapita": 55523.0,
+          "pengeluaran": 1557599.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Sragen",
+              "karesidenan": "Surakarta",
+              "value": 167752,
+              "umk": 2182200.0,
+              "pengeluaran": 1557599.0,
+              "tpt": 3.49
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Sragen",
+              "karesidenan": "Surakarta",
+              "value": 197360,
+              "umk": 2182200.0,
+              "pengeluaran": 1557599.0,
+              "tpt": 3.49
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Sragen",
+              "karesidenan": "Surakarta",
+              "value": 217557,
+              "umk": 2182200.0,
+              "pengeluaran": 1557599.0,
+              "tpt": 3.49
+            }
+          ]
+        },
+        {
+          "id": "3372",
+          "name": "Kota Surakarta",
+          "type": "Kota",
+          "karesidenan": "Surakarta",
+          "level": "Kabupaten/Kota",
+          "umk": 2416560.0,
+          "tpt": 4.5,
+          "pdrb_kapita": 130017.0,
+          "pengeluaran": 1930254.0,
+          "cluster": "Pusat Metropolis & Industri Matang",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Kota Surakarta",
+              "karesidenan": "Surakarta",
+              "value": 84687,
+              "umk": 2416560.0,
+              "pengeluaran": 1930254.0,
+              "tpt": 4.5
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Kota Surakarta",
+              "karesidenan": "Surakarta",
+              "value": 1634,
+              "umk": 2416560.0,
+              "pengeluaran": 1930254.0,
+              "tpt": 4.5
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Kota Surakarta",
+              "karesidenan": "Surakarta",
+              "value": 201687,
+              "umk": 2416560.0,
+              "pengeluaran": 1930254.0,
+              "tpt": 4.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Karesidenan Semarang",
+      "karesidenan": "Semarang",
+      "level": "Karesidenan",
+      "children": [
+        {
+          "id": "3315",
+          "name": "Grobogan",
+          "type": "Kabupaten",
+          "karesidenan": "Semarang",
+          "level": "Kabupaten/Kota",
+          "umk": 2254090.0,
+          "tpt": 3.12,
+          "pdrb_kapita": 26421.0,
+          "pengeluaran": 1272355.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Grobogan",
+              "karesidenan": "Semarang",
+              "value": 267227,
+              "umk": 2254090.0,
+              "pengeluaran": 1272355.0,
+              "tpt": 3.12
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Grobogan",
+              "karesidenan": "Semarang",
+              "value": 345268,
+              "umk": 2254090.0,
+              "pengeluaran": 1272355.0,
+              "tpt": 3.12
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Grobogan",
+              "karesidenan": "Semarang",
+              "value": 277710,
+              "umk": 2254090.0,
+              "pengeluaran": 1272355.0,
+              "tpt": 3.12
+            }
+          ]
+        },
+        {
+          "id": "3321",
+          "name": "Demak",
+          "type": "Kabupaten",
+          "karesidenan": "Semarang",
+          "level": "Kabupaten/Kota",
+          "umk": 2940716.0,
+          "tpt": 4.58,
+          "pdrb_kapita": 30654.0,
+          "pengeluaran": 1272901.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Demak",
+              "karesidenan": "Semarang",
+              "value": 266123,
+              "umk": 2940716.0,
+              "pengeluaran": 1272901.0,
+              "tpt": 4.58
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Demak",
+              "karesidenan": "Semarang",
+              "value": 146109,
+              "umk": 2940716.0,
+              "pengeluaran": 1272901.0,
+              "tpt": 4.58
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Demak",
+              "karesidenan": "Semarang",
+              "value": 265509,
+              "umk": 2940716.0,
+              "pengeluaran": 1272901.0,
+              "tpt": 4.58
+            }
+          ]
+        },
+        {
+          "id": "3322",
+          "name": "Semarang",
+          "type": "Kabupaten",
+          "karesidenan": "Semarang",
+          "level": "Kabupaten/Kota",
+          "umk": 2750136.0,
+          "tpt": 3.63,
+          "pdrb_kapita": 64076.0,
+          "pengeluaran": 1590485.0,
+          "cluster": "Pusat Metropolis & Industri Matang",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Semarang",
+              "karesidenan": "Semarang",
+              "value": 220777,
+              "umk": 2750136.0,
+              "pengeluaran": 1590485.0,
+              "tpt": 3.63
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Semarang",
+              "karesidenan": "Semarang",
+              "value": 174223,
+              "umk": 2750136.0,
+              "pengeluaran": 1590485.0,
+              "tpt": 3.63
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Semarang",
+              "karesidenan": "Semarang",
+              "value": 271472,
+              "umk": 2750136.0,
+              "pengeluaran": 1590485.0,
+              "tpt": 3.63
+            }
+          ]
+        },
+        {
+          "id": "3324",
+          "name": "Kendal",
+          "type": "Kabupaten",
+          "karesidenan": "Semarang",
+          "level": "Kabupaten/Kota",
+          "umk": 2783455.0,
+          "tpt": 4.6,
+          "pdrb_kapita": 60002.0,
+          "pengeluaran": 1414982.0,
+          "cluster": "Kawasan Industri Baru (Relokasi)",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Kendal",
+              "karesidenan": "Semarang",
+              "value": 193653,
+              "umk": 2783455.0,
+              "pengeluaran": 1414982.0,
+              "tpt": 4.6
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Kendal",
+              "karesidenan": "Semarang",
+              "value": 159616,
+              "umk": 2783455.0,
+              "pengeluaran": 1414982.0,
+              "tpt": 4.6
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Kendal",
+              "karesidenan": "Semarang",
+              "value": 264462,
+              "umk": 2783455.0,
+              "pengeluaran": 1414982.0,
+              "tpt": 4.6
+            }
+          ]
+        },
+        {
+          "id": "3373",
+          "name": "Kota Salatiga",
+          "type": "Kota",
+          "karesidenan": "Semarang",
+          "level": "Kabupaten/Kota",
+          "umk": 2533583.0,
+          "tpt": 3.67,
+          "pdrb_kapita": 95230.0,
+          "pengeluaran": 2189306.0,
+          "cluster": "Kota Jasa & Perdagangan",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Kota Salatiga",
+              "karesidenan": "Semarang",
+              "value": 32475,
+              "umk": 2533583.0,
+              "pengeluaran": 2189306.0,
+              "tpt": 3.67
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Kota Salatiga",
+              "karesidenan": "Semarang",
+              "value": 5849,
+              "umk": 2533583.0,
+              "pengeluaran": 2189306.0,
+              "tpt": 3.67
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Kota Salatiga",
+              "karesidenan": "Semarang",
+              "value": 71989,
+              "umk": 2533583.0,
+              "pengeluaran": 2189306.0,
+              "tpt": 3.67
+            }
+          ]
+        },
+        {
+          "id": "3374",
+          "name": "Kota Semarang",
+          "type": "Kota",
+          "karesidenan": "Semarang",
+          "level": "Kabupaten/Kota",
+          "umk": 3454827.0,
+          "tpt": 5.65,
+          "pdrb_kapita": 167236.0,
+          "pengeluaran": 2316979.0,
+          "cluster": "Pusat Metropolis & Industri Matang",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Kota Semarang",
+              "karesidenan": "Semarang",
+              "value": 284401,
+              "umk": 3454827.0,
+              "pengeluaran": 2316979.0,
+              "tpt": 5.65
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Kota Semarang",
+              "karesidenan": "Semarang",
+              "value": 23317,
+              "umk": 3454827.0,
+              "pengeluaran": 2316979.0,
+              "tpt": 5.65
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Kota Semarang",
+              "karesidenan": "Semarang",
+              "value": 631048,
+              "umk": 3454827.0,
+              "pengeluaran": 2316979.0,
+              "tpt": 5.65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Karesidenan Pati",
+      "karesidenan": "Pati",
+      "level": "Karesidenan",
+      "children": [
+        {
+          "id": "3316",
+          "name": "Blora",
+          "type": "Kabupaten",
+          "karesidenan": "Pati",
+          "level": "Kabupaten/Kota",
+          "umk": 2238431.0,
+          "tpt": 3.61,
+          "pdrb_kapita": 38547.0,
+          "pengeluaran": 1391695.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Blora",
+              "karesidenan": "Pati",
+              "value": 95608,
+              "umk": 2238431.0,
+              "pengeluaran": 1391695.0,
+              "tpt": 3.61
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Blora",
+              "karesidenan": "Pati",
+              "value": 238967,
+              "umk": 2238431.0,
+              "pengeluaran": 1391695.0,
+              "tpt": 3.61
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Blora",
+              "karesidenan": "Pati",
+              "value": 219135,
+              "umk": 2238431.0,
+              "pengeluaran": 1391695.0,
+              "tpt": 3.61
+            }
+          ]
+        },
+        {
+          "id": "3317",
+          "name": "Rembang",
+          "type": "Kabupaten",
+          "karesidenan": "Pati",
+          "level": "Kabupaten/Kota",
+          "umk": 2236169.0,
+          "tpt": 2.9,
+          "pdrb_kapita": 41352.0,
+          "pengeluaran": 1388694.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Rembang",
+              "karesidenan": "Pati",
+              "value": 86930,
+              "umk": 2236169.0,
+              "pengeluaran": 1388694.0,
+              "tpt": 2.9
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Rembang",
+              "karesidenan": "Pati",
+              "value": 138877,
+              "umk": 2236169.0,
+              "pengeluaran": 1388694.0,
+              "tpt": 2.9
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Rembang",
+              "karesidenan": "Pati",
+              "value": 166117,
+              "umk": 2236169.0,
+              "pengeluaran": 1388694.0,
+              "tpt": 2.9
+            }
+          ]
+        },
+        {
+          "id": "3318",
+          "name": "Pati",
+          "type": "Kabupaten",
+          "karesidenan": "Pati",
+          "level": "Kabupaten/Kota",
+          "umk": 2332350.0,
+          "tpt": 3.71,
+          "pdrb_kapita": 46043.0,
+          "pengeluaran": 1397564.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Pati",
+              "karesidenan": "Pati",
+              "value": 199385,
+              "umk": 2332350.0,
+              "pengeluaran": 1397564.0,
+              "tpt": 3.71
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Pati",
+              "karesidenan": "Pati",
+              "value": 297859,
+              "umk": 2332350.0,
+              "pengeluaran": 1397564.0,
+              "tpt": 3.71
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Pati",
+              "karesidenan": "Pati",
+              "value": 321783,
+              "umk": 2332350.0,
+              "pengeluaran": 1397564.0,
+              "tpt": 3.71
+            }
+          ]
+        },
+        {
+          "id": "3319",
+          "name": "Kudus",
+          "type": "Kabupaten",
+          "karesidenan": "Pati",
+          "level": "Kabupaten/Kota",
+          "umk": 2680486.0,
+          "tpt": 3.23,
+          "pdrb_kapita": 148384.0,
+          "pengeluaran": 1426017.0,
+          "cluster": "Sentra Industri Spesifik / Energi",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Kudus",
+              "karesidenan": "Pati",
+              "value": 226728,
+              "umk": 2680486.0,
+              "pengeluaran": 1426017.0,
+              "tpt": 3.23
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Kudus",
+              "karesidenan": "Pati",
+              "value": 55916,
+              "umk": 2680486.0,
+              "pengeluaran": 1426017.0,
+              "tpt": 3.23
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Kudus",
+              "karesidenan": "Pati",
+              "value": 226170,
+              "umk": 2680486.0,
+              "pengeluaran": 1426017.0,
+              "tpt": 3.23
+            }
+          ]
+        },
+        {
+          "id": "3320",
+          "name": "Jepara",
+          "type": "Kabupaten",
+          "karesidenan": "Pati",
+          "level": "Kabupaten/Kota",
+          "umk": 2610224.0,
+          "tpt": 3.3,
+          "pdrb_kapita": 34918.0,
+          "pengeluaran": 1232926.0,
+          "cluster": "Sentra Industri Spesifik / Energi",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Jepara",
+              "karesidenan": "Pati",
+              "value": 338799,
+              "umk": 2610224.0,
+              "pengeluaran": 1232926.0,
+              "tpt": 3.3
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Jepara",
+              "karesidenan": "Pati",
+              "value": 81544,
+              "umk": 2610224.0,
+              "pengeluaran": 1232926.0,
+              "tpt": 3.3
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Jepara",
+              "karesidenan": "Pati",
+              "value": 267681,
+              "umk": 2610224.0,
+              "pengeluaran": 1232926.0,
+              "tpt": 3.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Karesidenan Pekalongan",
+      "karesidenan": "Pekalongan",
+      "level": "Karesidenan",
+      "children": [
+        {
+          "id": "3325",
+          "name": "Batang",
+          "type": "Kabupaten",
+          "karesidenan": "Pekalongan",
+          "level": "Kabupaten/Kota",
+          "umk": 2534383.0,
+          "tpt": 5.07,
+          "pdrb_kapita": 39390.0,
+          "pengeluaran": 1493272.0,
+          "cluster": "Kawasan Industri Baru (Relokasi)",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Batang",
+              "karesidenan": "Pekalongan",
+              "value": 173239,
+              "umk": 2534383.0,
+              "pengeluaran": 1493272.0,
+              "tpt": 5.07
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Batang",
+              "karesidenan": "Pekalongan",
+              "value": 124985,
+              "umk": 2534383.0,
+              "pengeluaran": 1493272.0,
+              "tpt": 5.07
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Batang",
+              "karesidenan": "Pekalongan",
+              "value": 184622,
+              "umk": 2534383.0,
+              "pengeluaran": 1493272.0,
+              "tpt": 5.07
+            }
+          ]
+        },
+        {
+          "id": "3326",
+          "name": "Pekalongan",
+          "type": "Kabupaten",
+          "karesidenan": "Pekalongan",
+          "level": "Kabupaten/Kota",
+          "umk": 2486654.0,
+          "tpt": 3.24,
+          "pdrb_kapita": 31722.0,
+          "pengeluaran": 1400914.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Pekalongan",
+              "karesidenan": "Pekalongan",
+              "value": 253376,
+              "umk": 2486654.0,
+              "pengeluaran": 1400914.0,
+              "tpt": 3.24
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Pekalongan",
+              "karesidenan": "Pekalongan",
+              "value": 110689,
+              "umk": 2486654.0,
+              "pengeluaran": 1400914.0,
+              "tpt": 3.24
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Pekalongan",
+              "karesidenan": "Pekalongan",
+              "value": 225882,
+              "umk": 2486654.0,
+              "pengeluaran": 1400914.0,
+              "tpt": 3.24
+            }
+          ]
+        },
+        {
+          "id": "3327",
+          "name": "Pemalang",
+          "type": "Kabupaten",
+          "karesidenan": "Pekalongan",
+          "level": "Kabupaten/Kota",
+          "umk": 2296140.0,
+          "tpt": 6.61,
+          "pdrb_kapita": 24047.0,
+          "pengeluaran": 1304606.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Pemalang",
+              "karesidenan": "Pekalongan",
+              "value": 278460,
+              "umk": 2296140.0,
+              "pengeluaran": 1304606.0,
+              "tpt": 6.61
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Pemalang",
+              "karesidenan": "Pekalongan",
+              "value": 186299,
+              "umk": 2296140.0,
+              "pengeluaran": 1304606.0,
+              "tpt": 6.61
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Pemalang",
+              "karesidenan": "Pekalongan",
+              "value": 345374,
+              "umk": 2296140.0,
+              "pengeluaran": 1304606.0,
+              "tpt": 6.61
+            }
+          ]
+        },
+        {
+          "id": "3328",
+          "name": "Tegal",
+          "type": "Kabupaten",
+          "karesidenan": "Pekalongan",
+          "level": "Kabupaten/Kota",
+          "umk": 2333586.0,
+          "tpt": 7.61,
+          "pdrb_kapita": 30348.0,
+          "pengeluaran": 1132428.0,
+          "cluster": "Wilayah Agraris & Penyangga",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Tegal",
+              "karesidenan": "Pekalongan",
+              "value": 243945,
+              "umk": 2333586.0,
+              "pengeluaran": 1132428.0,
+              "tpt": 7.61
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Tegal",
+              "karesidenan": "Pekalongan",
+              "value": 186224,
+              "umk": 2333586.0,
+              "pengeluaran": 1132428.0,
+              "tpt": 7.61
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Tegal",
+              "karesidenan": "Pekalongan",
+              "value": 431957,
+              "umk": 2333586.0,
+              "pengeluaran": 1132428.0,
+              "tpt": 7.61
+            }
+          ]
+        },
+        {
+          "id": "3329",
+          "name": "Brebes",
+          "type": "Kabupaten",
+          "karesidenan": "Pekalongan",
+          "level": "Kabupaten/Kota",
+          "umk": 2239802.0,
+          "tpt": 8.07,
+          "pdrb_kapita": 31768.0,
+          "pengeluaran": 1221092.0,
+          "cluster": "Kawasan Industri Baru (Relokasi)",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Brebes",
+              "karesidenan": "Pekalongan",
+              "value": 321943,
+              "umk": 2239802.0,
+              "pengeluaran": 1221092.0,
+              "tpt": 8.07
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Brebes",
+              "karesidenan": "Pekalongan",
+              "value": 297263,
+              "umk": 2239802.0,
+              "pengeluaran": 1221092.0,
+              "tpt": 8.07
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Brebes",
+              "karesidenan": "Pekalongan",
+              "value": 446602,
+              "umk": 2239802.0,
+              "pengeluaran": 1221092.0,
+              "tpt": 8.07
+            }
+          ]
+        },
+        {
+          "id": "3375",
+          "name": "Kota Pekalongan",
+          "type": "Kota",
+          "karesidenan": "Pekalongan",
+          "level": "Kabupaten/Kota",
+          "umk": 2545138.0,
+          "tpt": 4.83,
+          "pdrb_kapita": 48994.0,
+          "pengeluaran": 1335526.0,
+          "cluster": "Kota Jasa & Perdagangan",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Kota Pekalongan",
+              "karesidenan": "Pekalongan",
+              "value": 73698,
+              "umk": 2545138.0,
+              "pengeluaran": 1335526.0,
+              "tpt": 4.83
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Kota Pekalongan",
+              "karesidenan": "Pekalongan",
+              "value": 4330,
+              "umk": 2545138.0,
+              "pengeluaran": 1335526.0,
+              "tpt": 4.83
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Kota Pekalongan",
+              "karesidenan": "Pekalongan",
+              "value": 101649,
+              "umk": 2545138.0,
+              "pengeluaran": 1335526.0,
+              "tpt": 4.83
+            }
+          ]
+        },
+        {
+          "id": "3376",
+          "name": "Kota Tegal",
+          "type": "Kota",
+          "karesidenan": "Pekalongan",
+          "level": "Kabupaten/Kota",
+          "umk": 2376684.0,
+          "tpt": 5.82,
+          "pdrb_kapita": 77030.0,
+          "pengeluaran": 1462296.0,
+          "cluster": "Kota Jasa & Perdagangan",
+          "children": [
+            {
+              "name": "Industri Pengolahan",
+              "level": "Sektor",
+              "kabupaten": "Kota Tegal",
+              "karesidenan": "Pekalongan",
+              "value": 32386,
+              "umk": 2376684.0,
+              "pengeluaran": 1462296.0,
+              "tpt": 5.82
+            },
+            {
+              "name": "Pertanian, Kehutanan & Perikanan",
+              "level": "Sektor",
+              "kabupaten": "Kota Tegal",
+              "karesidenan": "Pekalongan",
+              "value": 9850,
+              "umk": 2376684.0,
+              "pengeluaran": 1462296.0,
+              "tpt": 5.82
+            },
+            {
+              "name": "Perdagangan & Jasa",
+              "level": "Sektor",
+              "kabupaten": "Kota Tegal",
+              "karesidenan": "Pekalongan",
+              "value": 102763,
+              "umk": 2376684.0,
+              "pengeluaran": 1462296.0,
+              "tpt": 5.82
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
