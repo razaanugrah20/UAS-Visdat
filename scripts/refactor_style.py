@@ -2,13 +2,11 @@ import re
 import os
 
 filepath = r"d:\3SD2\Data UAS Visdat\WebStory.html"
-backup = r"d:\3SD2\Data UAS Visdat\WebStory_backup.html"
+
 
 with open(filepath, 'r', encoding='utf-8') as f:
     html = f.read()
 
-with open(backup, 'w', encoding='utf-8') as f:
-    f.write(html)
 
 # Update Google fonts
 new_fonts = """<link rel="preconnect" href="https://fonts.googleapis.com">
