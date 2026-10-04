@@ -182,12 +182,12 @@
       <!-- Justifikasi Desain Visualisasi Geospasial (Syarat Soal 4b & Lampiran A) -->
       <div class="encoding-justification" style="display: none;">
         <i data-lucide="info" style="flex-shrink: 0; margin-top: 2px;"></i>
-        <div>
+       <div>
           <strong>Justifikasi Encoding Visual:</strong> Peta mengimplementasikan dua teknik simultan: (1)
           <em>Choropleth</em> menggunakan variabel intensif rasio pengangguran (<strong>TPT %</strong>, bukan angka
           absolut penganggur) untuk menghindari ilusi luas wilayah sesuai kaidah kartografi; (2) <em>Proportional
             Symbol</em> mengkodekan besaran absolut <strong>Jumlah Penduduk Bekerja</strong> melalui diameter lingkaran
-          (luas sebanding nilai). Palet warna <em>Viridis</em> diterapkan secara khusus agar ramah buta warna
+          (luas sebanding nilai). Palet warna sekuensial <em>ColorBrewer YlOrBr (Yellow-Orange-Brown)</em> diterapkan secara khusus agar ramah buta warna
           (*colorblind-safe*) dan mempertahankan gradasi kecerahan seragam secara perseptual.
         </div>
       </div>
@@ -979,8 +979,6 @@
     let geoJsonLayer = null;
     let symbolLayerGroup = null;
 
-    // Skema Warna Viridis untuk TPT (1.5% s/d 11.5%)
-
 
     function initGeospatialMap() {
       const geoData = window.GEOSPATIAL_DATA || window.GEOSPATIAL_NATIONAL;
@@ -1202,8 +1200,6 @@
       if (mode === 'symbols') document.getElementById('btnGeoSymbols').classList.add('active');
       if (mode === 'combined') document.getElementById('btnGeoCombined').classList.add('active');
 
-      const legendTitle = document.getElementById('legendMetricTitle');
-      legendTitle.textContent = mode === 'symbols' ? 'Volume Pekerja' : 'TPT (%)';
       renderGeoLayers();
     }
 
@@ -1566,7 +1562,6 @@
       const x = d3.scaleBand().range([0, innerW]).domain(pcpDimensions).padding(0.06);
       const y = d3.scaleBand().range([0, innerH]).domain(items.map(d => d.id)).padding(0.08);
 
-      // Palet Warna: Z-Score (Diverging RdBu) vs Adaptif (Viridis/Plasma Kontras Tinggi)
       const colorZscore = d3.scaleLinear().domain([-2.5, 0, 2.5]).range(['#4A2511', '#E5D0B5', '#B83200']).clamp(true);
       const colorAdaptive = d3.scaleSequential(d3.interpolateOranges).domain([0.05, 0.95]);
 
