@@ -1,129 +1,80 @@
-# Eksplorasi Ketimpangan Ketenagakerjaan dan Fenomena Relokasi Industri Jawa Tengah (2021–2025)
+# Eksplorasi Ketimpangan Ketenagakerjaan & Relokasi Industri
 
-Proyek Akhir / Ujian Akhir Semester (UAS) Mata Kuliah **Visualisasi Data dan Informasi** (K203407)  
-Program Studi Komputasi Statistik, Politeknik Statistika STIS — Semester Genap TA 2025/2026  
-**Dosen Pengampu:** Siti Mariyah, Ph.D. & Farid Ridho, M.T.
+Aplikasi web visualisasi data interaktif (scrollytelling) tentang disparitas ketenagakerjaan di Indonesia, dengan fokus analisis pada Jawa Tengah tahun 2025. Data bersumber dari BPS, dibuat dalam konteks mata kuliah Visualisasi Data STIS.
 
----
+## Isi Halaman
 
-## 📌 Ringkasan Eksekutif & Tema Riset
+Halaman dibagi menjadi beberapa bagian yang dibaca berurutan sambil di-scroll:
 
-* **Tema Utama:** Ketimpangan Ketenagakerjaan dan Pengupahan Kabupaten/Kota.
-* **Lokus Penelitian:** Nasional (±500 Kab/Kota) dan Fokus Utama Provinsi **Jawa Tengah (35 Kabupaten/Kota)**.
-* **Narasi Substantif:**
-  Dalam periode 2022–2025, terjadi gelombang relokasi industri padat karya (khususnya tekstil, garmen, dan alas kaki) dari kawasan industri berupah tinggi di Jabodetabek dan Jawa Barat (UMK > Rp5 Juta) menuju koridor pantai utara Jawa Tengah (Kendal, Batang, Brebes) dengan UMK berkisar Rp2,1 – 2,6 Juta. Dasbor ini memvisualisasikan bagaimana transformasi spasial dan multivariat ini terjadi serta implikasinya terhadap struktur serapan tenaga kerja sektoral.
+1. **Pendahuluan (Hero)**: pengantar topik ketimpangan ketenagakerjaan.
+2. **Lanskap Ketenagakerjaan Nasional 2025** (`#geospatial`): peta interaktif Leaflet per wilayah, dengan pewarnaan berdasarkan kelas TPT, mode peta yang bisa diganti, filter per pulau, panel detail wilayah, dan tombol reset zoom.
+3. **Dinamika Multivariat 35 Kabupaten/Kota Jawa Tengah** (`#multivariate`): tiga visual yang saling terhubung:
+   - PCA biplot
+   - Parallel coordinates dengan brushing
+   - Clustered heatmap (skala bisa diganti)
+   Dilengkapi pemilih tahun, filter cluster, highlight kabupaten/kota (hover maupun permanen), dan story tour.
+4. **Struktur Hierarki Tenaga Kerja Jawa Tengah** (`#hierarchy`): treemap dan sunburst D3.
+5. **Kesimpulan** (`#kesimpulan`).
 
----
+Navigasi tersedia lewat top nav dan dot navigation di samping yang otomatis mengikuti posisi scroll.
 
-## 📊 Pemenuhan Kriteria Soal & 3 Topik Visualisasi (Lampiran A)
+## Struktur Folder
 
-Aplikasi mengintegrasikan **3 topik visualisasi data** yang saling terpadu:
-
-### 1. Data Geospasial (Nasional, 507 Kabupaten/Kota)
-* **Kepatuhan Kriteria:** Mencakup 507 unit kabupaten/kota se-Indonesia (> 500 unit).
-* **Dua Representasi Peta Berbeda:**
-  1. *Choropleth Map:* Mengkodekan **Tingkat Pengangguran Terbuka (TPT, %)** dengan klasifikasi bertingkat dan palet warna *Viridis* (ramah buta warna/colorblind-safe). Menggunakan rasio intensif (bukan angka absolut pengangguran) sesuai kaidah kartografi.
-  2. *Proportional Symbol Map:* Mengkodekan besaran absolut **Jumlah Penduduk Bekerja (jiwa)** melalui ukuran radius lingkaran.
-  3. *Combined Bivariate Layer:* Menampilkan kedua indikator secara simultan.
-* **Interaktivitas:** Zoom, pan, filter pulau (Jawa, Sumatera, Kalimantan, Sulawesi, dsb.), dan tooltip kartu profil daerah komparatif.
-
-### 2. Data Berdimensi Tinggi / Multivariat (35 Kab/Kota Jateng, 2021–2025)
-* **Kepatuhan Kriteria:** 8 variabel numerik, 35 unit observasi (> 34 unit), deret waktu 5 tahun.
-* **8 Variabel Terpilih:**
-  1. `tpt`: Tingkat Pengangguran Terbuka (%)
-  2. `tpak`: Tingkat Partisipasi Angkatan Kerja (%)
-  3. `umk`: Upah Minimum Kabupaten/Kota (Rupiah)
-  4. `pdrb_kapita`: PDRB per Kapita ADHB (Ribu Rupiah)
-  5. `pengeluaran`: Rata-Rata Pengeluaran per Kapita sebulan (Rupiah)
-  6. `angkatan_kerja`: Jumlah Angkatan Kerja (jiwa)
-  7. `rls`: Rata-Rata Lama Sekolah (tahun)
-  8. `kepadatan`: Kepadatan Penduduk (jiwa/km²)
-* **Teknik Reduksi Dimensi:**
-  * **PCA Biplot:** Mereduksi 8 variabel ke dalam 2 komponen utama (PC1 & PC2) yang merangkum **68.82% total varians** (PC1: 46.66%, PC2: 22.16%). Menampilkan vektor loading 8 arah variabel dan proyeksi skor 35 daerah.
-* **Dua Teknik Visualisasi Tambahan:**
-  * **Parallel Coordinates Plot (PCP):** 8 sumbu dimensi vertikal dengan fitur **Interactive Brushing**.
-  * **Clustered Heatmap:** Matriks 35 kab/kota × 8 variabel (Z-score standardized) diurutkan berdasarkan skor PC1.
-* **Brushing & Linking Antar Tampilan:** Menyorot (*hover*) atau memilih (*brush*) daerah pada salah satu grafik secara instan menyorot entitas yang sama pada kedua grafik lainnya.
-* **Slider Waktu & Animasi:** Memutar trayektori perubahan dari tahun 2021 hingga 2025.
-
-### 3. Data Berhierarki / Berjenjang (Jawa Tengah)
-* **Kepatuhan Kriteria:** Struktur 3 level administratif & sektoral:
-  $$\text{Provinsi Jawa Tengah} \longrightarrow \text{Eks-Karesidenan (6)} \longrightarrow \text{Kabupaten/Kota (35)} \longrightarrow \text{Sektor Lapangan Usaha (3)}$$
-* **Dua Representasi Berbeda:**
-  1. *Zoomable Squarified Treemap*
-  2. *Concentric Sunburst Diagram*
-* **Visual Encoding Ganda:**
-  * **Ukuran (Size / Luas / Sudut):** Mengkodekan kuantitas absolut *Jumlah Penduduk Bekerja (jiwa)*.
-  * **Warna (Color Ramp):** Mengkodekan indikator moneter *Upah Minimum (UMK)* atau *Pengeluaran per Kapita*.
-* **Interaktivitas:** Fitur *Drill-down* interaktif dengan *Breadcrumb Navigation* penunjuk posisi hierarki.
-
----
-
-## 🗂️ Struktur Direktori Repositori
-
-```text
-├── WebStory.html                    # Berkas Utama Laman Web Visualisasi Data (Single Page App)
-├── README.md                        # Dokumentasi Lengkap Proyek & Metodologi
-├── [LapakGIS.com] Batas Wilayah Kabupaten 2024/ # Shapefile Resmi Batas Administrasi Kab/Kota 2024 (456 MB)
-├── scripts/
-│   ├── process_lapakgis_shapefile.py # Ekstraksi & Kompresi Topologi SHP LapakGIS -> GeoJSON 3.5 MB
-│   ├── build_full_datasets.py       # Skrip Master Pipeline Ekstraksi, Normalisasi & Kalkulasi PCA SVD
-│   └── test_process.py              # Skrip Pengujian Pemetaan BPS Code
-├── data/
-│   ├── geospatial_national.json     # 515 Kab/Kota Terpetakan Nasional Teranotasi TPT & Penduduk Bekerja
-│   ├── geospatial_national.js       # Wrapper JavaScript (Kompatibel Offline & Online)
-│   ├── multivariate_jateng.json     # Data 8 Variabel 35 Kab/Kota Jateng 2021-2025 + PCA
-│   ├── multivariate_jateng.js       # Wrapper JavaScript
-│   ├── hierarchy_jateng.json        # Data Pohon Hierarki 3 Level (JSON)
-│   └── hierarchy_jateng.js          # Wrapper JavaScript
-└── [Folder Sumber Data BPS Excel]   # Berkas Mentah Asli dari BPS Jateng & BPS RI (2021-2025)
+```
+.
+├── index.html          # Struktur halaman dan seluruh JavaScript
+├── style.css           # Seluruh styling (dipisah dari index.html)
+├── README.md
+└── data_json/          # WAJIB ada, tidak termasuk di file ini
+    ├── geospatial_national.js
+    ├── multivariate_jateng.js
+    └── hierarchy_jateng.js
 ```
 
----
+File di `data_json/` dimuat sebagai `<script>` biasa (bukan `fetch`), jadi datanya berupa variabel JavaScript global. Tanpa folder ini, semua visualisasi akan kosong.
 
-## 🚀 Cara Menjalankan Aplikasi
+## Teknologi
 
-Aplikasi dirancang agar dapat dibuka tanpa ketergantungan server backend:
+| Library | Kegunaan | Sumber |
+|---|---|---|
+| D3.js v7 | PCA biplot, parallel coordinates, heatmap, treemap, sunburst | d3js.org |
+| Leaflet 1.9.4 | Peta geospasial | unpkg |
+| Lucide | Ikon | unpkg (`@latest`) |
+| Google Fonts | Public Sans, Roboto Mono | fonts.googleapis.com |
 
-### Opsi 1: Membuka Langsung (Offline / Local)
-Cukup buka berkas `WebStory.html` langsung di peramban web modern (Google Chrome, Microsoft Edge, Mozilla Firefox). Karena seluruh dataset telah dibundel ke dalam direktori `data/`, aplikasi dapat langsung beroperasi tanpa kendala CORS.
+Tidak ada build step, framework, atau dependensi npm.
 
-### Opsi 2: Menjalankan via Local Web Server
+## Cara Menjalankan
+
+Karena data dimuat lewat tag `<script>`, halaman bisa dibuka langsung dengan klik dua kali `index.html`. Tetap disarankan memakai server lokal agar perilakunya sama dengan saat di-hosting:
+
 ```bash
-# Menggunakan Python 3:
-python -m http.server 8080
+# Python
+python -m http.server 8000
 
-# Buka pada browser:
-http://localhost:8080/WebStory.html
+# atau Node
+npx serve .
 ```
 
-### Opsi 3: Akses Publik (GitHub Pages)
-Aplikasi siap di-deploy secara instan ke **GitHub Pages**:
-1. Push repositori ini ke akun GitHub publik Anda.
-2. Buka menu **Settings** > **Pages**.
-3. Pilih branch `main` dan folder `/ (root)`.
-4. Aplikasi akan aktif pada alamat: `https://[username].github.io/[repo-name]/WebStory.html`.
+Lalu buka `http://localhost:8000`. Koneksi internet diperlukan untuk memuat library dari CDN.
 
----
+## Gambaran Kode JavaScript
 
-## 📚 Sumber Data Resmi & Atribusi BPS
+Semua logika ada di satu blok `<script>` di akhir `index.html`, dikelompokkan per bagian:
 
-1. **BPS RI:**
-   * *Tingkat Pengangguran Terbuka Menurut Kabupaten/Kota (2025)* — Sakernas BPS RI.
-   * *Penduduk Berumur 15 Tahun Keatas yang Bekerja Menurut Kabupaten/Kota dan Lapangan Usaha (2025)* — BPS RI.
-   * *Jumlah Penduduk Menurut Kabupaten/Kota (2025)* — BPS RI.
-2. **BPS Provinsi Jawa Tengah (2021–2025):**
-   * *Tingkat Pengangguran Terbuka (TPT) dan Tingkat Partisipasi Angkatan Kerja (TPAK) Menurut Kabupaten/Kota di Jawa Tengah (Keadaan Agustus 2021–2025)*.
-   * *Upah Minimum Kabupaten/Kota (UMK) Menurut Kabupaten/Kota di Provinsi Jawa Tengah (2021–2025)*.
-   * *Produk Domestik Regional Bruto (PDRB) per Kapita Atas Dasar Harga Berlaku Menurut Kabupaten/Kota di Provinsi Jawa Tengah (2021–2025)*.
-   * *Rata-Rata Pengeluaran per Kapita Sebulan Makanan dan Bukan Makanan di Daerah Perkotaan Menurut Kabupaten/Kota di Provinsi Jawa Tengah (2021–2025)*.
-   * *Jumlah Angkatan Kerja Menurut Kabupaten/Kota di Provinsi Jawa Tengah (2021–2025)*.
-   * *Rata-Rata Lama Sekolah (RLS) Menurut Kabupaten/Kota di Provinsi Jawa Tengah (2021–2025)*.
-   * *Kepadatan Penduduk Menurut Kabupaten/Kota di Provinsi Jawa Tengah (2021–2025)*.
+- **Data**: `getGeoData`, `getMvData`, `getHierarchyData` mengambil data dari variabel global.
+- **Navigasi & scroll**: `initScrollyTelling`, `initDotNav`, `initTopNavObserver`.
+- **Tooltip**: `showTooltip`, `hideTooltip`.
+- **Peta**: `initGeospatialMap`, `renderGeoLayers`, `getTptClassColor`, `getFeatureStyle`, `displayRegionDetail`, `setGeoMapMode`, `filterMapIsland`, `resetMapZoom`.
+- **Multivariat**: `initMultivariateVisualizations`, `renderPcaBiplot`, `renderParallelCoordinates`, `onPcpBrush`, `renderClusteredHeatmap`, `setHeatmapScaleMode`, `setMvYear`, `filterMvCluster`, serta fungsi highlight (`highlightKabKota`, `togglePermanentHighlight`, `applyCurrentHighlightState`, `resetMvHighlight`) dan story tour (`setTourCids`, `resetStoryTour`).
+- **Hierarki**: `initHierarchyVisualizations`, `renderTreemap`, `renderSunburst`, `getHierarchyColor`.
 
----
+## Catatan Teknis
 
-## ⚖️ Deklarasi Integritas Akademik (Sesuai Soal Poin 7)
+- Masih ada sekitar 100 atribut `style="..."` inline di HTML. Ini sengaja tidak dipindah ke `style.css` agar tampilan tidak berubah; bisa dirapikan bertahap menjadi class.
+- Lucide dimuat dengan versi `@latest`. Sebaiknya dikunci ke versi tertentu supaya tampilan tidak berubah tiba-tiba saat ada rilis baru.
+- JavaScript masih menyatu di `index.html` (sekitar 1.300 baris). Jika ingin konsisten, bisa dipisah juga ke `script.js`.
 
-Pekerjaan ini orisinal dan dikerjakan secara mandiri. Penggunaan alat bantu kecerdasan buatan (*AI assistant*) sebatas alat bantu asistensi teknis (penyusunan struktur sintaks skrip ekstraksi data tabular Python, implementasi aljabar linear SVD untuk PCA menggunakan NumPy, serta tata letak CSS/D3.js). Seluruh sintesis narasi, pemilihan tema penelitian, validasi data statistik, dan penarikan kesimpulan dilakukan secara independen oleh mahasiswa.
-"# UAS-Visdat" 
+## Kredit
+
+Kode dibuat oleh [Muhammad Raza Anugrah]. Data: Badan Pusat Statistik (BPS).
