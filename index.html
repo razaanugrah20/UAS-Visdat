@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eksplorasi Ketimpangan Ketenagakerjaan & Relokasi Industri - BPS & Visdat STIS</title>
   <meta name="description"
-    content="Aplikasi visualisasi data interaktif: Disparitas ketenagakerjaan nasional, analisis multivariat Jawa Tengah 2021-2025, dan struktur hierarki tenaga kerja industri.">
+    content="Aplikasi visualisasi data interaktif: Disparitas ketenagakerjaan nasional, analisis multivariat Jawa Tengah 2025, dan struktur hierarki tenaga kerja industri.">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -761,10 +761,9 @@
     }
 
     .vector-label {
-      fill: #F5DEB3;
+      fill: #A33B20;
       font-size: 10px;
       font-weight: 600;
-      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
     }
 
     /* Parallel Coordinates */
@@ -1590,11 +1589,12 @@
         </div>
       </a>
 
-      <nav class="nav-tabs">
-        <a href="#geospatial" class="nav-tab-btn active"><i data-lucide="map"></i> Geospatial</a>
-        <a href="#multivariate" class="nav-tab-btn"><i data-lucide="sparkles"></i> Multivariat (PCA)</a>
-        <a href="#hierarchy" class="nav-tab-btn"><i data-lucide="git-fork"></i> Hierarki</a>
-        <a href="#story" class="nav-tab-btn"><i data-lucide="book-open"></i> Insight & Makalah</a>
+
+      <nav class="nav-tabs" id="topNavTabs">
+        <a href="#geospatial" class="nav-tab-btn active" id="topNavGeospatial"><i data-lucide="map"></i> Geospatial</a>
+        <a href="#multivariate" class="nav-tab-btn" id="topNavMultivariate"><i data-lucide="sparkles"></i> Multivariat (PCA)</a>
+        <a href="#hierarchy" class="nav-tab-btn" id="topNavHierarchy"><i data-lucide="git-fork"></i> Hierarki</a>
+
       </nav>
 
       <div class="header-badge">
@@ -1604,7 +1604,7 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero" data-dot-label="Beranda">
+  <section class="hero" data-dot-label="Pendahuluan">
     <div class="container">
       <div class="hero-content">
         <div class="hero-tag">
@@ -1613,7 +1613,7 @@
         <h1 class="hero-title">Ketimpangan Ketenagakerjaan<span class="accent-line">&amp; Eksodus Industri ke Jawa
             Tengah</span></h1>
         <p class="hero-desc">
-          Menelusuri pergeseran industri padat karya dari kawasan upah tinggi ke Jawa Tengah (2021–2025) — dari
+          Menelusuri pergeseran industri padat karya dari kawasan upah tinggi ke Jawa Tengah (2025) — dari
           lanskap spasial ±500 kabupaten/kota, profil multivariat 8 indikator, hingga struktur tenaga kerja
           hierarkis.
         </p>
@@ -1647,7 +1647,7 @@
           </div>
           <div>
             <div class="stat-val">8</div>
-            <div class="stat-label">Variabel Sosial-Ekonomi (5 Thn)</div>
+            <div class="stat-label">Variabel Sosial-Ekonomi</div>
           </div>
         </div>
 
@@ -1676,13 +1676,13 @@
       </div>
 
       <!-- BAB 1: PROLOG & NARRATIVE STORY CALLOUT -->
-      <div id="prolog" class="story-callout" data-dot-label="Prolog">
+      <div id="prolog" class="story-callout">
         <div class="story-callout-header">
           <i data-lucide="flame"></i> Prolog Cerita Data
         </div>
         <h3 class="story-callout-title">Mengapa Industri Padat Karya Berbondong-bondong Pindah ke Jawa Tengah?</h3>
         <p class="story-callout-desc">
-          Dalam periode 2022 hingga 2025, terjadi pergeseran tektonik peta manufaktur di Pulau Jawa. Lonjakan Upah
+          Dalam beberapa tahun terakhir, terjadi pergeseran tektonik peta manufaktur di Pulau Jawa. Lonjakan Upah
           Minimum Kabupaten/Kota (UMK) di kawasan megapolitan Jabodetabek—seperti <strong>Kabupaten Karawang
             (Rp5.257.834)</strong> dan <strong>Kota Bekasi (Rp5.343.430)</strong>—menciptakan beban biaya operasional
           yang tak lagi tertahankan bagi industri padat karya (garmen, tekstil, dan alas kaki).
@@ -1863,15 +1863,15 @@
           </div>
         </div>
       </div>
-      <div class="source-attribution">Sumber: BPS RI (Survei Angkatan Kerja Nasional &amp; Estimasi Ketenagakerjaan
-        2025)</div>
+      <div class="source-attribution">Sumber: BPS RI (Tingkat Pengangguran Terbuka Menurut Jenis Kelamin dan Kabupaten/Kota 2025 & Penduduk Berumur 15 Tahun <br>
+        ke Atas yang Bekerja Selama Seminggu Terakhir Menurut Kabupaten/Kota dan Lapangan Usaha 2025)</div>
     </div>
   </section>
 
   <!-- ========================================================================= -->
-  <!-- TOPIK 2: MULTIVARIATE DATA & PCA (35 KAB/KOTA JATENG 2021-2025)           -->
+  <!-- TOPIK 2: MULTIVARIATE DATA & PCA (35 KAB/KOTA JATENG 2025)           -->
   <!-- ========================================================================= -->
-  <section id="multivariate" class="section-block" data-dot-label="Multivariat">
+  <section id="multivariate" class="section-block" >
     <div class="container">
       <div class="section-header">
         <div class="section-title-wrap">
@@ -1879,7 +1879,7 @@
             (Multivariat)</div>
           <h2 class="section-title">Dinamika Multivariat 35 Kabupaten/Kota Jawa Tengah</h2>
           <p class="section-lead">
-            Analisis 8 variabel numerik lintas tahun (2021–2025) menggunakan Principal Component Analysis (PCA Biplot),
+            Analisis 8 variabel numerik lintas tahun (2025) menggunakan Principal Component Analysis (PCA Biplot),
             Parallel Coordinates Plot, dan Clustered Heatmap. Dilengkapi interaktivitas <strong>Brushing &amp;
               Linking</strong> antar ketiga tampilan.
           </p>
@@ -2094,7 +2094,7 @@
               penyerapan industri manufakturnya melonjak drastis.
             </p>
             <p>
-              Mereka adalah episentrum utama migrasi pabrik garmen dan alas kaki dari Jabodetabek, didorong oleh
+              Mereka adalah episentrum utama migrasi pabrik garmen dan alas kaki dari Jawa Barat-Banten, didorong oleh
               berdirinya Kawasan Industri Terpadu Batang (KITB) dan KEK Kendal. Garis pada <em>Parallel Coordinates</em>
               menunjukkan tingkat pengangguran (TPT) yang masih bergejolak akibat transisi agraris ke industri.
             </p>
@@ -2154,7 +2154,7 @@
   <!-- ========================================================================= -->
   <!-- TOPIK 3: HIERARCHICAL DATA (TREEMAP & SUNBURST JATENG)                    -->
   <!-- ========================================================================= -->
-  <section id="hierarchy" class="section-block" data-dot-label="Bab 5: Hierarki">
+  <section id="hierarchy" class="section-block">
     <div class="container">
 
       <!-- TETAP DIPERTAHANKAN: Header Section -->
@@ -2298,7 +2298,8 @@
             </p>
           </div>
 
-          <div class="scrolly-step" data-action="setHierarchyColorMetric('tpt'); zoomHierarchyRoot();">
+          <div class="scrolly-step" data-dot-label="Eksplorasi Bebas"
+            data-action="setHierarchyColorMetric('tpt'); zoomHierarchyRoot();">
             <div class="scrolly-step-eyebrow"><i data-lucide="mouse-pointer"></i> Eksplorasi Bebas</div>
             <h3>Eksplorasi Tingkat Pengangguran (TPT)</h3>
             <p>
@@ -2313,150 +2314,41 @@
       <!-- ==================================================================================== -->
 
       <!-- TETAP DIPERTAHANKAN: Sumber Data & Navigasi Bab -->
-      <div class="source-attribution">Sumber: BPS Provinsi Jawa Tengah (Data Ketenagakerjaan Berdasarkan Lapangan Usaha
-        2025)</div>
+      <div class="source-attribution">Sumber: BPS Provinsi Jawa Tengah (Data Ketenagakerjaan Berdasarkan Lapangan Usaha 2025)</div>
 
     </div>
   </section>
 
-  <!-- ========================================================================= -->
-  <!-- TOPIK 4: DATA STORYTELLING & RINGKASAN MAKALAH (IEEE FORMAT)               -->
-  <!-- ========================================================================= -->
-  <section id="story" class="section-block" data-dot-label="Bab 6: Insight">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-title-wrap">
-          <div class="section-subtitle"><i data-lucide="book-open"></i> Insight Riset &bull; Format Makalah IEEE</div>
-          <h2 class="section-title">Narasi Pembahasan &amp; Dokumentasi Proyek</h2>
-          <p class="section-lead">
-            Sintesis temuan empiris mengenai relokasi industri, evaluasi kritis rancangan visualisasi, keterbatasan
-            studi, dan daftar pustaka acuan sesuai standar publikasi IEEE.
-          </p>
-        </div>
-      </div>
-
-      <div class="story-grid">
-        <!-- Main Narrative Column -->
-        <div class="narrative-card glass-panel">
-          <h3><i data-lucide="compass"></i> 1. Latar Belakang &amp; Permasalahan Relokasi</h3>
-          <p>
-            Dalam rentang waktu 2022 hingga awal 2026, peta ketenagakerjaan di Pulau Jawa mengalami pergeseran tektonik.
-            Kenaikan Upah Minimum Kabupaten/Kota (UMK) yang signifikan di kawasan Jabodetabek, Karawang, dan Bekasi—yang
-            menembus angka di atas Rp5.100.000—memicu tekanan margin operasi yang berat bagi industri manufaktur padat
-            karya, khususnya tekstil, produk tekstil (TPT), dan alas kaki.
-          </p>
-          <p>
-            Sebagaimana dikonfirmasi Asosiasi Pengusaha Indonesia (Apindo) dan Kementerian Ketenagakerjaan RI, Jawa
-            Tengah muncul sebagai episentrum relokasi utama berkat ketersediaan infrastruktur Jalan Tol Trans-Jawa,
-            penetapan Kawasan Industri Terpadu Batang (KITB) dan Kawasan Industri Kendal (KIK), serta tingkat upah yang
-            masih sangat kompetitif di kisaran Rp2.100.000 hingga Rp2.600.000.
-          </p>
-
-          <div class="key-finding-box">
-            <div class="key-finding-title"><i data-lucide="check-circle-2"></i> Temuan Kunci Dasbor Visualisasi:</div>
-            <ul style="font-size: 0.85rem; color: var(--text-muted); padding-left: 20px; line-height: 1.6;">
-              <li><strong>Transformasi Koridor Pantura Barat:</strong> Batang, Kendal, dan Brebes menunjukkan pergeseran
-                nyata pada PCA Biplot menuju kuadran serapan tenaga kerja industri tinggi, membedakannya dari kabupaten
-                tetangga yang masih murni agraris.</li>
-              <li><strong>Dikotomi Dualisme Ekonomi:</strong> Semarang Raya berfungsi sebagai hub finansial dan jasa
-                bernilai tambah tinggi, sementara kabupaten di eks-Karesidenan Banyumas dan Kedu selatan masih
-                membutuhkan intervensi pemerataan akses pendidikan dan upah layak.</li>
-              <li><strong>Elastisitas Penyerapan Tenaga Kerja:</strong> Analisis hierarki menunjukkan bahwa sektor
-                industri pengolahan di wilayah relokasi menyerap hingga 35-42% total penduduk bekerja, menggeser sektor
-                pertanian yang sebelumnya mendominasi.</li>
-            </ul>
-          </div>
-
-          <h3><i data-lucide="shield-check"></i> 2. Evaluasi Kritis Rancangan &amp; Prinsip Desain</h3>
-          <p>
-            Rancangan antarmuka visualisasi ini menerapkan prinsip dasar persepsi grafis William Cleveland dan Colin
-            Ware. Penggunaan posisi spasial dua dimensi pada PCA Biplot dan koordinat sejajar pada Parallel Coordinates
-            Plot memprioritaskan akurasi decoding kognitif tertinggi.
-          </p>
-          <p>
-            Seluruh representasi warna dikalibrasi menggunakan palet <em>Viridis</em> dan <em>Cividis</em> yang bebas
-            dari kelemahan distorsi buta warna (protanopia, deuteranopia, tritanopia), serta mempertahankan
-            monotonicitas luminansi saat dicetak dalam format monokrom. Fitur <em>brushing and linking</em> secara
-            dramatis memangkas beban kognitif pengguna saat melakukan penelusuran multivariat silang.
-          </p>
-
-          <h3><i data-lucide="alert-triangle"></i> 3. Keterbatasan Studi (Limitations)</h3>
-          <p>
-            Data yang digunakan bersumber dari publikasi Sakernas dan PDRB BPS. Keterbatasan utama mencakup ketiadaan
-            disagregasi pekerja formal vs informal tingkat kabupaten/kota secara berkesinambungan 10 tahun, sehingga
-            proksi status pekerjaan dan pengeluaran per kapita dimanfaatkan sebagai representasi daya beli riil.
-          </p>
-        </div>
-
-        <!-- Sidebar / IEEE Meta & AI Declaration -->
-        <div style="display: flex; flex-direction: column; gap: 16px;">
-          <!-- Deklarasi AI (Wajib Sesuai Soal Poin 7) -->
-          <div class="info-card glass-panel" style="border-left: 3px solid #8B5E34;">
-            <div class="info-card-header">
-              <span class="info-card-title"><i data-lucide="cpu"></i> Deklarasi Alat Bantu AI</span>
-            </div>
-            <p style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.6;">
-              Sesuai dengan ketentuan integritas akademik <strong>Soal UAS Poin 7</strong>, penggunaan alat bantu
-              berbasis AI (Google Antigravity AI Assistant) dinyatakan secara transparan pada bagian Metodologi. Alat
-              bantu digunakan sebatas asistensi penulisan skrip komputasi ekstraksi data tabular BPS, kalkulasi
-              matematis SVD untuk PCA, dan optimalisasi struktur sintaksis D3.js. Seluruh interpretasi substantif,
-              pemilihan tema, dan validasi data dilakukan mandiri.
-            </p>
-          </div>
-
-          <!-- Tautan Repositori & Makalah -->
-          <div class="info-card glass-panel">
-            <div class="info-card-header">
-              <span class="info-card-title"><i data-lucide="link"></i> Tautan Publik Proyek</span>
-            </div>
-            <div style="font-size: 0.8rem; display: flex; flex-direction: column; gap: 10px;">
-              <div>
-                <strong style="color: var(--primary);">Laman Web Publik:</strong>
-                <div style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-muted);">
-                  https://[username].github.io/visdat-uas-2026/WebStory.html
-                </div>
+  <section id="kesimpulan" class="section-block">
+      <div class="container">
+          <div class="story-callout" style="background: linear-gradient(135deg, rgba(255, 248, 238, 0.95), rgba(255, 250, 240, 0.85));">
+              <div class="story-callout-header">
+                  <i data-lucide="check-circle"></i> Kesimpulan
               </div>
-              <div>
-                <strong style="color: var(--primary);">Repositori GitHub:</strong>
-                <div style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-muted);">
-                  https://github.com/[username]/visdat-uas-2026
-                </div>
-              </div>
-            </div>
-          </div>
+              <h3 class="story-callout-title">Sintesis Analisis Ketenagakerjaan Jawa Tengah</h3>
+              <p class="story-callout-desc">
+                  Berdasarkan integrasi analisis geospasial, multivariat, dan hierarkis, pergeseran industri padat karya ke Jawa Tengah tidak sekadar didorong oleh selisih UMK, melainkan memunculkan tiga temuan struktural yang krusial:
+              </p>
 
-          <!-- Referensi Ilmiah Standar IEEE (Min. 10 Acuan, 3 Internasional) -->
-          <div class="info-card glass-panel" style="flex: 1;">
-            <div class="info-card-header">
-              <span class="info-card-title"><i data-lucide="bookmark"></i> Referensi IEEE Terpilih</span>
-            </div>
-            <ol class="source-list" style="font-size: 0.74rem; color: var(--text-muted); padding-left: 14px;">
-              <li>[1] BPS Provinsi Jawa Tengah, <em>Provinsi Jawa Tengah dalam Angka 2025</em>, Semarang: BPS, 2025.
-              </li>
-              <li>[2] BPS RI, <em>Keadaan Ketenagakerjaan Indonesia Agustus 2025</em>, BRS No. 78/11/Th. XXVIII,
-                Jakarta, 2025.</li>
-              <li>[3] E. R. Tufte, <em>The Visual Display of Quantitative Information</em>, 2nd ed. Cheshire, CT:
-                Graphics Press, 2001.</li>
-              <li>[4] C. Ware, <em>Information Visualization: Perception for Design</em>, 4th ed. Cambridge, MA: Morgan
-                Kaufmann, 2020.</li>
-              <li>[5] M. Bostock, V. Ogievetsky, and J. Heer, "D3: Data-Driven Documents," <em>IEEE Trans. Vis. Comput.
-                  Graph.</em>, vol. 17, no. 12, pp. 2301–2309, Dec. 2011.</li>
-              <li>[6] S. Liu et al., "A Survey on Information Visualization for High-Dimensional Data," <em>IEEE Trans.
-                  Vis. Comput. Graph.</em>, vol. 20, no. 12, pp. 2311–2320, 2014.</li>
-              <li>[7] J. H. F. de Oliveira et al., "Industrial Relocation and Spatial Wage Disparities in Developing
-                Economies," <em>Journal of Regional Science</em>, vol. 63, no. 2, pp. 412–435, 2023.</li>
-              <li>[8] B. Shneiderman, "The Eyes Have It: A Task by Data Type Taxonomy for Information Visualizations,"
-                in <em>Proc. IEEE Symp. Vis. Lang.</em>, 1996, pp. 336–343.</li>
-              <li>[9] A. Inselberg and B. Dimsdale, "Parallel coordinates: a tool for visualizing multi-dimensional
-                geometry," in <em>Proc. 1st IEEE Conf. Visualization (Vis'90)</em>, 1990, pp. 361–378.</li>
-              <li>[10] S. Mariyah and F. Ridho, <em>Modul Pembelajaran Visualisasi Data dan Informasi</em>, Jakarta:
-                Politeknik Statistika STIS, 2025.</li>
-            </ol>
+              <ul class="source-list" style="margin-top: 14px; margin-bottom: 14px; list-style-type: disc; padding-left: 20px; color: var(--text-muted); font-size: 0.92rem; line-height: 1.7;">
+                <li style="margin-bottom: 8px;">
+                  <strong>Paradoks Geospasial Nasional:</strong> Tingginya biaya tenaga kerja di koridor Jabodetabek-Jabar-Banten terbukti memicu rasionalisasi pekerja, menjadikan provinsi berupah tinggi tersebut sebagai kantong pengangguran (TPT) tertinggi secara nasional.
+                </li>
+                <li style="margin-bottom: 8px;">
+                  <strong>Dualisme Dimensi Multivariat:</strong> Reduksi dimensi PCA membuktikan bahwa dimensi kemakmuran daerah (PDRB, RLS) terpisah secara independen dari tekanan pasar kerja, menegaskan bahwa kemajuan ekonomi wilayah tidak otomatis menyerap tenaga kerja secara proporsional.
+                </li>
+                <li style="margin-bottom: 8px;">
+                  <strong>Anomali Wilayah Relokasi:</strong> Validasi klasterisasi membuktikan Kabupaten Brebes—meski berstatus magnet investasi baru di Pantura Barat—secara statistik masih terjebak dalam tekanan pengangguran yang jauh lebih ekstrem dibandingkan Kendal dan Batang.
+                </li>
+              </ul>
+
+              <p class="story-callout-desc">
+                Ketiga taksonomi visualisasi ini menyimpulkan bahwa status "kawasan relokasi" secara administratif tidak selalu homogen dengan kematangan transformasi ekonominya. Hal ini menuntut perumusan kebijakan pemerataan pembangunan yang lebih diferensial dan presisi di tingkat kabupaten/kota.
+              </p>
           </div>
-        </div>
       </div>
-    </div>
   </section>
+  
 
   <!-- Footer -->
   <footer>
@@ -2464,10 +2356,7 @@
       <div class="footer-left">
         <div><strong>UAS Visualisasi Data dan Informasi TA 2025/2026</strong> &bull; Program Studi Komputasi Statistik
         </div>
-        <div>Politeknik Statistika STIS &bull; Dosen Pengampu: Siti Mariyah, Ph.D. &amp; Farid Ridho, M.T.</div>
-      </div>
-      <div style="font-family: var(--font-mono); font-size: 0.78rem;">
-        Format Makalah: IEEE Dua Kolom (6–8 Halaman)
+        <div>Politeknik Statistika STIS &bull; Dosen Pengampu: Farid Ridho, M.T.</div>
       </div>
     </div>
   </footer>
@@ -2564,14 +2453,44 @@
           const idx = targets.indexOf(entry.target);
           if (idx === -1) return;
           if (entry.isIntersecting) {
+            // Update Dot Nav
             dots.forEach(d => d.classList.remove('active'));
             dots[idx].classList.add('active');
+
+            
           }
         });
       }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
 
       targets.forEach(el => observer.observe(el));
     }
+
+    // Observer Khusus untuk Menu Navigasi Atas
+    function initTopNavObserver() {
+      const sections = document.querySelectorAll('section.section-block');
+      const topNavLinks = document.querySelectorAll('.nav-tabs .nav-tab-btn');
+
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Hapus class active dari semua menu atas
+            topNavLinks.forEach(link => link.classList.remove('active'));
+
+            // Tambahkan class active berdasarkan ID section yang sedang dilihat
+            const targetId = entry.target.id;
+            const activeLink = document.querySelector(`.nav-tabs a[href="#${targetId}"]`);
+            if (activeLink) {
+              activeLink.classList.add('active');
+            }
+          }
+        });
+      }, { rootMargin: '-20% 0px -70% 0px' }); // Memicu pergantian saat judul section menyentuh 20% layar atas
+
+      sections.forEach(sec => sectionObserver.observe(sec));
+    }
+
+    // Jalankan fungsinya
+    document.addEventListener('DOMContentLoaded', initTopNavObserver);
 
     // Tooltip Helpers
     const tooltipEl = document.getElementById('chartTooltip');
@@ -2998,7 +2917,7 @@
         .append('text')
         .attr('x', d => xScale(d.pca.pc1) + 8)
         .attr('y', d => yScale(d.pca.pc2) + 3)
-        .attr('fill', '#ffffff')
+        .attr('fill', '#3B2615')
         .attr('font-size', '10px')
         .attr('font-weight', '700')
         .attr('font-family', 'var(--font-sans)')
@@ -3250,44 +3169,6 @@
         .style('font-size', '10px');
     }
 
-    // TUR CERITA TERPANDU (GUIDED STORY TOURS)
-    // function runStoryTour(tourType) {
-    //   document.querySelectorAll('.story-tour-btn').forEach(b => b.classList.remove('active'));
-    //   const narrativeBox = document.getElementById('storyTourNarrativeBox');
-    //   narrativeBox.style.display = 'block';
-
-    //   if (tourType === 'relokasi') {
-    //     document.getElementById('btnTour1').classList.add('active');
-    //     setMvYear(2025);
-    //     highlightMultipleCids(['3325', '3324', '3329']);
-    //     narrativeBox.innerHTML = `
-    //       <strong>🏭 Tur 1: Kawasan Industri Baru Pantura (Batang, Kendal, Brebes)</strong><br>
-    //       Perhatikan posisi ketiga kabupaten ini di kuadran kanan-bawah PCA Biplot! Daerah ini memiliki karakteristik unik: 
-    //       <strong>UMK masih sangat kompetitif (Rp2.1 - 2.5 Juta)</strong>, laju pertumbuhan angkatan kerja pesat, namun penyerapan industri manufaktur melonjak drastis. 
-    //       Inilah episentrum utama migrasi ratusan pabrik garmen dan sepatu dari Jabodetabek menuju KIT Batang dan KIK Kendal.
-    //     `;
-    //   } else if (tourType === 'metropolis') {
-    //     document.getElementById('btnTour2').classList.add('active');
-    //     setMvYear(2025);
-    //     highlightMultipleCids(['3374', '3372', '3329']);
-    //     narrativeBox.innerHTML = `
-    //       <strong>🏙️ Tur 2: Kontras Ekstrem Kota Semarang vs Kab. Brebes</strong><br>
-    //       Lihat posisi <strong>Kota Semarang</strong> yang berada di ujung kiri PC1 (skor -5.0, UMK Rp3.4 Juta, PDRB per kapita Rp145 Juta) 
-    //       dibandingkan <strong>Kab. Brebes</strong> di sisi kanan-bawah (UMK Rp2.1 Juta, angkatan kerja terbesar &gt; 1.15 Juta jiwa). 
-    //       Dua kutub ini merefleksikan dualisme tajam: Semarang sebagai hub perkotaan modern bernilai tambah tinggi vs Brebes sebagai lumbung tenaga kerja padat karya.
-    //     `;
-    //   } else if (tourType === 'agraris') {
-    //     document.getElementById('btnTour3').classList.add('active');
-    //     setMvYear(2025);
-    //     highlightMultipleCids(['3304', '3307', '3303']);
-    //     narrativeBox.innerHTML = `
-    //       <strong>🌾 Tur 3: Dilema Wilayah Agraris Tradisional (Banjarnegara &amp; Wonosobo)</strong><br>
-    //       Terletak di bagian atas PCA (PC2 positif). Memiliki Tingkat Partisipasi Angkatan Kerja (TPAK) sangat tinggi (&gt;78%), 
-    //       namun UMK dan PDRB per kapita berada di jajaran terendah di Jawa Tengah. Hal ini menandakan mayoritas angkatan kerja terserap di sektor pertanian subsisten pedesaan dengan produktivitas moneter rendah.
-    //     `;
-    //   }
-    // }
-
     function resetStoryTour() {
       document.querySelectorAll('.story-tour-btn').forEach(b => b.classList.remove('active'));
       const narrativeBox = document.getElementById('storyTourNarrativeBox');
@@ -3435,25 +3316,6 @@
       d3.selectAll('.pcp-line').classed('dimmed', d => !matchCids.includes(d.id));
     }
 
-    function toggleTrajectoryAnimation() {
-      const btn = document.getElementById('btnPlayTrajectory');
-      if (AppState.isAnimatingTrajectory) {
-        clearInterval(AppState.animationInterval);
-        AppState.isAnimatingTrajectory = false;
-        btn.innerHTML = `<i data-lucide="play"></i> Putar Tren Waktu`;
-        lucide.createIcons();
-      } else {
-        AppState.isAnimatingTrajectory = true;
-        btn.innerHTML = `<i data-lucide="pause"></i> Jeda Tren`;
-        lucide.createIcons();
-        let curYear = 2021;
-        AppState.animationInterval = setInterval(() => {
-          setMvYear(curYear);
-          curYear++;
-          if (curYear > 2025) curYear = 2021;
-        }, 1200);
-      }
-    }
 
     // -------------------------------------------------------------------------
     // 3. HIERARCHICAL DATA (ZOOMABLE TREEMAP & CONCENTRIC SUNBURST)
@@ -3667,6 +3529,38 @@
         .attr('font-family', 'var(--font-mono)')
         .style('pointer-events', 'none') // Agar klik tidak terhalang teks
         .text(fmtNumber(root.value));
+
+      // Label Teks Melingkar untuk Busur Sunburst (Karesidenan & Kab/Kota)
+      svg.selectAll('.arc-label')
+        // Filter: Hanya tampilkan teks di Depth 1 (Karesidenan) & Depth 2 (Kab/Kota)
+        // Dan hanya jika sudut busurnya cukup lebar (> 0.06 radian) agar teks tidak menabrak
+        .data(root.descendants().filter(d => d.depth > 0 && d.depth <= 2 && (d.x1 - d.x0) > 0.06)) 
+        .enter()
+        .append('text')
+        .attr('class', 'arc-label')
+        .attr('transform', function(d) {
+            // Hitung titik tengah busur untuk posisi teks
+            const x = (d.x0 + d.x1) / 2 * 180 / Math.PI;
+            const y = (d.y0 + d.y1) / 2;
+            // Putar teks agar mudah dibaca (tidak terbalik saat di area bawah lingkaran)
+            return `rotate(${x - 90}) translate(${y},0) rotate(${x < 180 ? 0 : 180})`;
+        })
+        .attr('dy', '0.35em')
+        .attr('text-anchor', 'middle')
+        .attr('fill', '#ffffff')
+        .style('text-shadow', '0px 1px 3px rgba(0,0,0,0.85)') // Beri bayangan agar terbaca di warna terang
+        .attr('font-size', d => d.depth === 1 ? '9px' : '7.5px')
+        .attr('font-weight', d => d.depth === 1 ? '700' : '500')
+        .attr('font-family', 'var(--font-sans)')
+        .style('pointer-events', 'none') // Agar tidak memblokir event klik tooltip
+        .text(d => {
+            // Singkat nama agar muat di dalam busur
+            let name = d.data.name;
+            if (name.includes("Karesidenan")) name = name.replace("Karesidenan ", "");
+            if (name.includes("Kabupaten")) name = name.replace("Kabupaten ", "Kab. ");
+            if (name.includes("Kota")) name = name.replace("Kota ", "Kt. ");
+            return name;
+        });
     }
 
     function drillDownHierarchy(node) {
